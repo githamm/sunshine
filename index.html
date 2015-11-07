@@ -40,12 +40,31 @@ function showHide(shID) {
 		background: transparent url(up.gif) no-repeat left; }
 	a.showLink:hover, a.hideLink:hover {
 		border-bottom: 1px dotted #36f; }
+
+	.section {
+		width: 100%;
+		clear: both;
+	}
+	.score {
+		width: 10%;
+		float: left;
+		background-color: rgba(0,0,0,0.2);
+		font-size: 36px;
+		padding: 5px;
+	}
+	.question {
+		width: 90%;
+		float: left;
+		background-color: rgba(0,0,0,0.2);
+	}
 </style>
 </head>
 <body>
 	<div id="wrap">
-		<h1>In law, citizens have a right of access to government information through a defined mechanism.
-Yes</h1>
+		<div class="section">
+			<div class="score">Yes</div>
+			<div class="question">In law, citizens have a right of access to government information through a defined mechanism.</div>
+		</div>
 		<p>The Colorado Open Records Act, or CORA, is the state’s version of the Freedom of Information Act, which affords citizens a general access to public information. State law in Colorado also authorizes public access to some court records. <a href="#" id="sunshine-show" class="showLink" onclick="showHide('sunshine');return false;">Show more</a></p>
 		<div id="sunshine" class="more">
 			<p>The mechanism for citizens to access information in Colorado is to file an open records request. As the law’s legislative declaration says: “It is declared to be the public policy of this state that all public records shall be open for inspection by any person at reasonable times, except as … otherwise specifically provided by law.”</p>
