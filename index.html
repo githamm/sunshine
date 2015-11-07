@@ -28,8 +28,9 @@ function showHide(shID) {
 	/* This CSS is used for the Show/Hide functionality. */
 	.more {
 		display: none;
-		border-top: 1px solid #666;
-		border-bottom: 1px solid #666; }
+		/* border-top: 1px solid #666;
+		border-bottom: 1px solid #666; */
+		}
 	a.showLink, a.hideLink {
 		text-decoration: none;
 		color: #36f;
@@ -42,40 +43,54 @@ function showHide(shID) {
 
 	.section {
 		display: table;
-		margin: 22px 0px 5px 0px;
+		margin: 22px 0px 0px 0px;
 	}
 	.score-yes {
 		width: 30%;
-		height: 90px;
+		height: 57px;
 		float: left;
 		background-color: rgba(74,160,44,0.7);
-		font-size: 40px;
+		font-size: 27px;
+		font-weight: bold;
 		text-align: center;
 		padding-top: 10px;
 	}
 	.score-no {
 		width: 30%;
-		height: 90px;
+		height: 57px;
 		float: left;
 		background-color: rgba(161,45,76,0.7);
-		font-size: 40px;
+		font-size: 27px;
+		font-weight: bold;
+		text-align: center;
+		padding-top: 10px;
+	}
+	.score-moderate {
+		width: 30%;
+		height: 57px;
+		float: left;
+		background-color: rgba(212,160,23,0.7);
+		font-size: 27px;
+		font-weight: bold;
 		text-align: center;
 		padding-top: 10px;
 	}
 	.question {
 		width: 66%;
-		height: 90px;
+		height: 57px;
 		float: left;
 		background-color: rgba(0,0,0,0.1);
 		padding: 10px 0px 0px 20px;
-		font-style: italic;
+		font-size: 17px;
+		font-weight: bold;
 	}
 	.accordion {
 		clear: both;
 		width: 96%;
 		background-color: rgba(0,0,0,0.1);
 		padding: 10px;
-		font-size: 15px;
+		font-size: 17px;
+		border-top: solid 2px rgba(0,0,0,0.2);
 	}
 </style>
 </head>
@@ -83,7 +98,7 @@ function showHide(shID) {
 	<div id="wrap">
 		<div class="section">
 			<div class="question">In law, citizens have a right of access to government information through a defined mechanism.</div>
-			<div class="score-yes">Yes</div>
+			<div class="score-yes">YES</div>
 		</div>
 		<div class="accordion"><p>The Colorado Open Records Act, or CORA, is the state’s version of the Freedom of Information Act, which affords citizens a general access to public information. State law in Colorado also authorizes public access to some court records. <a href="#" id="sunshine-show" class="showLink" onclick="showHide('sunshine');return false;">Show more</a></p>
 		<div id="sunshine" class="more">
@@ -104,9 +119,9 @@ function showHide(shID) {
 	<div id="wrap">
 		<div class="section">
 			<div class="question">In law, citizens have a right of access to private sector information through a defined mechanism.</div>
-		  <div class="score-yes">Yes</div>
+		  <div class="score-yes">YES</div>
 		</div>
-		<div class="accordion"><p>Public records are any records or writings in any form maintained or kept by a government entity for the use of public or official functions, which includes contracts with private entities. Information submitted to a government by private entities for performance on behalf of the government are subject to public records requests with some exemptions. <a href="#" id="sunshine2-show" class="showLink" onclick="showHide('sunshine2');return false;">Show more</a></p></div>
+		<div class="accordion"><p>Public records are any records or writings in any form maintained or kept by a government entity for the use of public or official functions, which includes contracts with private entities. Information submitted to a government by private entities for performance on behalf of the government are subject to public records requests with some exemptions. <a href="#" id="sunshine2-show" class="showLink" onclick="showHide('sunshine2');return false;">Show more</a></p>
 		<div id="sunshine2" class="more">
 			<p>The mechanism for citizens to access information in Colorado is to file an open records request with the custodian.</p>
 			<p>Colorado has several factors for determining if and when private information should be public; much of that has been determined through case law rather than a general right to access under state statute or the constitution.</p>
@@ -118,44 +133,50 @@ function showHide(shID) {
 			<p>Confirmed with Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview.</p>
 			<p><a href="#" id="sunshine2-hide" class="hideLink" onclick="showHide('sunshine2');return false;">Show less</a></p>
 		</div>
+		</div>
 	</div>
 
 	<div id="wrap">
 		<div class="section">
 			<div class="question">In law, there is an entity/ies to monitor the application of access to information laws.</div>
-		  <div class="score-no">No</div>
+		  <div class="score-no">NO</div>
 		</div>
-		<div class="accordion"><p>No such law exists.</p>
-		<p>There is no public agency or entity in Colorado that monitors the application for access to information laws. Individuals seeking a record under the Colorado Open Records Act or the Criminal Justice Records Act must make a request through the “custodian” of a record. In other words, you have to ask the person or entity who is in possession of the information, and there is no entity that monitors the application of access to records held by custodians in Colorado. If there is a dispute it is relegated to the courts. <a href="#" id="sunshine3-show" class="showLink" onclick="showHide('sunshine3');return false;">Show more</a></p></div>
+		<div class="accordion"><p>There is no public agency or entity in Colorado that monitors the application for access to information laws. Individuals seeking a record under the Colorado Open Records Act or the Criminal Justice Records Act must make a request through the “custodian” of a record. In other words, you have to ask the person or entity who is in possession of the information, and there is no entity that monitors the application of access to records held by custodians in Colorado. If there is a dispute it is relegated to the courts. <a href="#" id="sunshine3-show" class="showLink" onclick="showHide('sunshine3');return false;">Show more</a></p>
 		<div id="sunshine3" class="more">
-		<p>Colorado Open Records Act, Colorado Revised Statutes 24-72-201 to 24-72-309, 1963: http://www.lexisnexis.com/hottopics/colorado/?app=00075&view=full&interface=1&docinfo=off&searchtype=get&search=C.R.S.+24-72-201</p>
-		<p>Confirmed with Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview.</p>
-		<p><a href="#" id="sunshine3-hide" class="hideLink" onclick="showHide('sunshine3');return false;">Show less</a></p>
+			<p>Colorado Open Records Act, Colorado Revised Statutes 24-72-201 to 24-72-309, 1963: http://www.lexisnexis.com/hottopics/colorado/?app=00075&view=full&interface=1&docinfo=off&searchtype=get&search=C.R.S.+24-72-201</p>
+			<p>Confirmed with Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview.</p>
+			<p><a href="#" id="sunshine3-hide" class="hideLink" onclick="showHide('sunshine3');return false;">Show less</a></p>
+		</div>
 		</div>
 	</div>
 
 	<div id="wrap">
-		<h1>In law, citizens have a right of appeal if access to government information is denied.
-Moderate</h1>
-		<p>If a custodian denies an open records request in Colorado, the law states the record seeker must use the court system as a remedy. There is no administrative appeals process in Colorado like there is at the federal level. <a href="#" id="sunshine4-show" class="showLink" onclick="showHide('sunshine4');return false;">Show more</a></p>
+		<div class="section">
+			<div class="question">In law, citizens have a right of appeal if access to government information is denied.</div>
+			<div class="score-moderate">MODERATE</div>
+		</div>
+		<div class="accordion"><p>If a custodian denies an open records request in Colorado, the law states the record seeker must use the court system as a remedy. There is no administrative appeals process in Colorado like there is at the federal level. <a href="#" id="sunshine4-show" class="showLink" onclick="showHide('sunshine4');return false;">Show more</a></p>
 		<div id="sunshine4" class="more">
-		<p>Colorado Open Records Act, 24-72-307, Challenge to accuracy and completeness - appeals: https://www.sos.state.co.us/pubs/info_center/files/CORA_Act.pdf</p>
-		<p>Confirmed with Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview.</p>
-		<p><a href="#" id="sunshine4-hide" class="hideLink" onclick="showHide('sunshine4');return false;">Show less</a></p>
+			<p>Colorado Open Records Act, 24-72-307, Challenge to accuracy and completeness - appeals: https://www.sos.state.co.us/pubs/info_center/files/CORA_Act.pdf</p>
+			<p>Confirmed with Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview.</p>
+			<p><a href="#" id="sunshine4-hide" class="hideLink" onclick="showHide('sunshine4');return false;">Show less</a></p>
+		</div>
 		</div>
 	</div>
 
 	<div id="wrap">
-		<h1>In law, there is an open data law, requiring the government to publish data online in an open format.
-No</h1>
-		<p>No such law exists.</p>
-		<p>Colorado does not have an open data law requiring the government to publish data online in an open format. <a href="#" id="sunshine5-show" class="showLink" onclick="showHide('sunshine5');return false;">Show more</a></p>
+		<div class="section">
+			<div class="question">In law, there is an open data law, requiring the government to publish data online in an open format.</div>
+			<div class="score-no">NO</div>
+		</div>
+		<div class="accordion"><p>Colorado does not have an open data law requiring the government to publish data online in an open format. <a href="#" id="sunshine5-show" class="showLink" onclick="showHide('sunshine5');return false;">Show more</a></p>
 		<div id="sunshine5" class="more">
-		<p>Some public records, however, do appear online. In 2009, a Colorado governor issued an executive order establishing the Transparency Online Project, which stated in part: “The Open Meetings Act and the Colorado Open Records Act provide Colorado's citizens with a strong expectation of accountability by providing open access to the state's public records and meetings. The advent of the internet provides new opportunities for state government to foster transparency and accountability.” A new transparency web site launched Jan. 1, 2015.</p>
-		<p>“The TOP system is not intended to replace Colorado citizen's access to public information allowed by the Colorado Open Records Act,” reads a state government website about the transparency project. “Rather it is intended to reduce the time and cost associated with open records requests and to maximize convenience for state citizens in accessing state financial information. Any information that is not available in the TOP system remains available to the public in accordance with the Colorado Open Records Act.”</p>
-		<p>Colorado Open Records Act, Colorado Revised Statutes 24-72-201 to 24-72-309, 1963: http://www.lexisnexis.com/hottopics/colorado/?app=00075&view=full&interface=1&docinfo=off&searchtype=get&search=C.R.S.+24-72-201</p>
-		<p>Confirmed with Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview. About the Colorado Transparency Project, accessed June 5, 2015: https://www.colorado.gov/apps/oit/transparency/about.html</p>
-		<p><a href="#" id="sunshine5-hide" class="hideLink" onclick="showHide('sunshine5');return false;">Show less</a></p>
+			<p>Some public records, however, do appear online. In 2009, a Colorado governor issued an executive order establishing the Transparency Online Project, which stated in part: “The Open Meetings Act and the Colorado Open Records Act provide Colorado's citizens with a strong expectation of accountability by providing open access to the state's public records and meetings. The advent of the internet provides new opportunities for state government to foster transparency and accountability.” A new transparency web site launched Jan. 1, 2015.</p>
+			<p>“The TOP system is not intended to replace Colorado citizen's access to public information allowed by the Colorado Open Records Act,” reads a state government website about the transparency project. “Rather it is intended to reduce the time and cost associated with open records requests and to maximize convenience for state citizens in accessing state financial information. Any information that is not available in the TOP system remains available to the public in accordance with the Colorado Open Records Act.”</p>
+			<p>Colorado Open Records Act, Colorado Revised Statutes 24-72-201 to 24-72-309, 1963: http://www.lexisnexis.com/hottopics/colorado/?app=00075&view=full&interface=1&docinfo=off&searchtype=get&search=C.R.S.+24-72-201</p>
+			<p>Confirmed with Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview. About the Colorado Transparency Project, accessed June 5, 2015: https://www.colorado.gov/apps/oit/transparency/about.html</p>
+			<p><a href="#" id="sunshine5-hide" class="hideLink" onclick="showHide('sunshine5');return false;">Show less</a></p>
+		</div>
 		</div>
 	</div>
 
