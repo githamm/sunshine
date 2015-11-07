@@ -19,9 +19,8 @@ function showHide(shID) {
 <style type="text/css">
 	#wrap {
 		font: 1.3em/1.3 Arial, Helvetica, sans-serif;
-		width: 30em;
+		width: 654px;
 		margin: 0 auto;
-		padding: 1em;
 		background-color: #fff; }
 	h1 {
 		font-size: 200%; }
@@ -42,30 +41,51 @@ function showHide(shID) {
 		border-bottom: 1px dotted #36f; }
 
 	.section {
-		width: 100%;
-		clear: both;
+		display: table;
+		margin: 22px 0px 5px 0px;
 	}
-	.score {
-		width: 10%;
+	.score-yes {
+		width: 30%;
+		height: 90px;
 		float: left;
-		background-color: rgba(0,0,0,0.2);
-		font-size: 36px;
-		padding: 5px;
+		background-color: rgba(74,160,44,0.7);
+		font-size: 40px;
+		text-align: center;
+		padding-top: 10px;
+	}
+	.score-no {
+		width: 30%;
+		height: 90px;
+		float: left;
+		background-color: rgba(161,45,76,0.7);
+		font-size: 40px;
+		text-align: center;
+		padding-top: 10px;
 	}
 	.question {
-		width: 90%;
+		width: 66%;
+		height: 90px;
 		float: left;
-		background-color: rgba(0,0,0,0.2);
+		background-color: rgba(0,0,0,0.1);
+		padding: 10px 0px 0px 20px;
+		font-style: italic;
+	}
+	.accordion {
+		clear: both;
+		width: 96%;
+		background-color: rgba(0,0,0,0.1);
+		padding: 10px;
+		font-size: 15px;
 	}
 </style>
 </head>
 <body>
 	<div id="wrap">
 		<div class="section">
-			<div class="score">Yes</div>
 			<div class="question">In law, citizens have a right of access to government information through a defined mechanism.</div>
+			<div class="score-yes">Yes</div>
 		</div>
-		<p>The Colorado Open Records Act, or CORA, is the state’s version of the Freedom of Information Act, which affords citizens a general access to public information. State law in Colorado also authorizes public access to some court records. <a href="#" id="sunshine-show" class="showLink" onclick="showHide('sunshine');return false;">Show more</a></p>
+		<div class="accordion"><p>The Colorado Open Records Act, or CORA, is the state’s version of the Freedom of Information Act, which affords citizens a general access to public information. State law in Colorado also authorizes public access to some court records. <a href="#" id="sunshine-show" class="showLink" onclick="showHide('sunshine');return false;">Show more</a></p>
 		<div id="sunshine" class="more">
 			<p>The mechanism for citizens to access information in Colorado is to file an open records request. As the law’s legislative declaration says: “It is declared to be the public policy of this state that all public records shall be open for inspection by any person at reasonable times, except as … otherwise specifically provided by law.”</p>
 			<p>The open records laws of Colorado are also two-pronged: There’s CORA, and there’s the Criminal Justice Records Act (CJRA), which generally applies to law enforcement and the courts. Both specify that information can be accessed by asking the custodian of the record.</p>
@@ -78,12 +98,15 @@ function showHide(shID) {
 			<p>Confirmed with Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview.</p>
 			<p><a href="#" id="sunshine-hide" class="hideLink" onclick="showHide('sunshine');return false;">Show less</a></p>
 		</div>
+		</div>
 	</div>
 
 	<div id="wrap">
-		<h1>In law, citizens have a right of access to private sector information through a defined mechanism.
-Yes</h1>
-		<p>Public records are any records or writings in any form maintained or kept by a government entity for the use of public or official functions, which includes contracts with private entities. Information submitted to a government by private entities for performance on behalf of the government are subject to public records requests with some exemptions. <a href="#" id="sunshine2-show" class="showLink" onclick="showHide('sunshine2');return false;">Show more</a></p>
+		<div class="section">
+			<div class="question">In law, citizens have a right of access to private sector information through a defined mechanism.</div>
+		  <div class="score-yes">Yes</div>
+		</div>
+		<div class="accordion"><p>Public records are any records or writings in any form maintained or kept by a government entity for the use of public or official functions, which includes contracts with private entities. Information submitted to a government by private entities for performance on behalf of the government are subject to public records requests with some exemptions. <a href="#" id="sunshine2-show" class="showLink" onclick="showHide('sunshine2');return false;">Show more</a></p></div>
 		<div id="sunshine2" class="more">
 			<p>The mechanism for citizens to access information in Colorado is to file an open records request with the custodian.</p>
 			<p>Colorado has several factors for determining if and when private information should be public; much of that has been determined through case law rather than a general right to access under state statute or the constitution.</p>
@@ -98,10 +121,12 @@ Yes</h1>
 	</div>
 
 	<div id="wrap">
-		<h1>In law, there is an entity/ies to monitor the application of access to information laws.
-No</h1>
-		<p>No such law exists.</p>
-		<p>There is no public agency or entity in Colorado that monitors the application for access to information laws. Individuals seeking a record under the Colorado Open Records Act or the Criminal Justice Records Act must make a request through the “custodian” of a record. In other words, you have to ask the person or entity who is in possession of the information, and there is no entity that monitors the application of access to records held by custodians in Colorado. If there is a dispute it is relegated to the courts. <a href="#" id="sunshine3-show" class="showLink" onclick="showHide('sunshine3');return false;">Show more</a></p>
+		<div class="section">
+			<div class="question">In law, there is an entity/ies to monitor the application of access to information laws.</div>
+		  <div class="score-no">No</div>
+		</div>
+		<div class="accordion"><p>No such law exists.</p>
+		<p>There is no public agency or entity in Colorado that monitors the application for access to information laws. Individuals seeking a record under the Colorado Open Records Act or the Criminal Justice Records Act must make a request through the “custodian” of a record. In other words, you have to ask the person or entity who is in possession of the information, and there is no entity that monitors the application of access to records held by custodians in Colorado. If there is a dispute it is relegated to the courts. <a href="#" id="sunshine3-show" class="showLink" onclick="showHide('sunshine3');return false;">Show more</a></p></div>
 		<div id="sunshine3" class="more">
 		<p>Colorado Open Records Act, Colorado Revised Statutes 24-72-201 to 24-72-309, 1963: http://www.lexisnexis.com/hottopics/colorado/?app=00075&view=full&interface=1&docinfo=off&searchtype=get&search=C.R.S.+24-72-201</p>
 		<p>Confirmed with Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview.</p>
