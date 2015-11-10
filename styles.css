@@ -1,0 +1,125 @@
+#wrap {
+		font: 1.3em/1.3 Arial, Helvetica, sans-serif;
+		width: 654px;
+		margin: 0 auto;
+		background-color: #fff; }
+	h1 {
+		font-size: 200%; }
+
+	/* This CSS is used for the Show/Hide functionality. */
+	.more {
+		display: none;
+		/* border-top: 1px solid #666;
+		border-bottom: 1px solid #666; */
+		}
+	a.showLink, a.hideLink {
+		text-decoration: none;
+		color: #36f;
+		padding-left: 8px;
+		background: transparent url(down.gif) no-repeat left; }
+	a.hideLink {
+		background: transparent url(up.gif) no-repeat left; }
+	a.showLink:hover, a.hideLink:hover {
+		border-bottom: 1px dotted #36f; }
+
+	.section {
+		display: table;
+		margin: 22px 0px 0px 0px;
+	}
+	.score-box {
+		width: 30%;
+		height: 82px;
+		float: left;
+		background-color: rgba(74,160,44,0.7);
+	}
+	.score-yes {
+		font-size: 27px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 15px;
+	}
+	.score-no {
+		width: 30%;
+		height: 72px;
+		float: left;
+		background-color: rgba(161,45,76,0.7);
+		font-size: 27px;
+		font-weight: bold;
+		text-align: center;
+		padding-top: 10px;
+	}
+	.score-moderate {
+		width: 30%;
+		height: 72px;
+		float: left;
+		background-color: rgba(212,160,23,0.7);
+		font-size: 27px;
+		font-weight: bold;
+		text-align: center;
+		padding-top: 10px;
+	}
+	.sub-score {
+		font-size: 10px;
+		font-weight: bold;
+		font-style: italic;
+		text-align: center;
+	}
+	.question {
+		width: 66%;
+		height: 72px;
+		float: left;
+		background-color: rgba(0,0,0,0.1);
+		padding: 10px 0px 0px 20px;
+		font-size: 17px;
+		font-weight: bold;
+	}
+	.accordion {
+		clear: both;
+		width: 96%;
+		background-color: rgba(0,0,0,0.1);
+		padding: 10px;
+		font-size: 17px;
+		border-top: solid 2px rgba(0,0,0,0.2);
+	}
+	table {
+		width: 100%;
+	}
+	table tr:nth-of-type(even) {
+    background-color: transparent !important;
+	}
+	th {
+		text-align: left;
+	}
+	td {
+		border: 1px solid gray;
+	}
+	tr.grade-c {
+		background-color: rgba(245,245,0,0.2);
+	}
+	tr.grade-c-minus {
+		background-color: rgba(245,245,0,0.6);
+	}
+	tr.grade-d-plus {
+		background-color: rgba(238,118,13,0.2);
+	}
+	tr.grade-d {
+		background-color: rgba(238,118,13,0.6);
+	}
+	tr.grade-d-minus {
+		background-color: rgba(238,118,13,1.0);
+	}
+	tr.grade-a {
+		background-color: rgba(0,175,0,0.6);
+	}
+	td.grade-b {
+		background-color: rgba(0,175,0,0.3);
+	}
+	td.grade-c {
+		background-color: rgba(245,245,0,0.1);
+	}
+	td.grade-d {
+		background-color: rgba(176,0,0,0.3);
+	}
+	td.grade-f {
+		background-color: rgba(176,0,0,0.6);
+	}

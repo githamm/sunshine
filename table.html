@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+  	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colorado&rsquo;s Tightening Labor Markets | The Denver Post</title>
+
+    <!-- Style sheets -->
+    <link href="http://extras.denverpost.com/projects/2015/salary-tables/css/footable.core.css?v=2-0-1" rel="stylesheet" type="text/css"/>
+    <link href="http://extras.denverpost.com/projects/2015/salary-tables/demos/css/footable-demos.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="http://extras.denverpost.com/foundation/css/foundation.css" />
+    <link rel="stylesheet" href="http://extras.denverpost.com/foundation/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="http://extras.denverpost.com/weather-closures/weather-closures-styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="shortcut icon" href="http://extras.mnginteractive.com/live/media/favIcon/dpo/favicon.ico" type="image/x-icon" />
+
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Scripts -->
+    
+    <script src="http://extras.denverpost.com/foundation/js/vendor/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+      if (!window.jQuery) { document.write('<script src="http://extras.denverpost.com/projects/2015/salary-tables/demos/js/jquery-1.9.1.min.js"><\/script>'); }
+    </script>
+    <script src=" http://extras.denverpost.com/projects/2015/salary-tables/js/footable.js?v=2-0-1" type="text/javascript"></script>
+    <script src="http://extras.denverpost.com/projects/2015/salary-tables/js/footable.sort.js?v=2-0-1" type="text/javascript"></script>
+    <script src="http://extras.denverpost.com/projects/2015/salary-tables/js/footable.filter.js?v=2-0-1" type="text/javascript"></script>
+    <script src="http://extras.denverpost.com/projects/2015/salary-tables/js/footable.paginate.js?v=2-0-1" type="text/javascript"></script>
+    <script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+
+    <style type="text/css">
+    h1 {
+    	font-family: 'Oswald', arial, sans-serif;
+    	font-weight: 700;
+    	font-size: 48px;
+    	line-height: 52px;
+    }
+    p.intro {
+    	font-family: 'Oswald', arial, sans-serif;
+    	font-weight: 400;
+    	font-size: 18px;
+    	color: rgba(0, 0, 0, .8)
+    }
+    p.source {
+        font-family: arial, sans-serif;
+    	font-size: 14px;
+    	font-style: italic;
+    	text-align: right;
+    	color: rgba(0, 0, 0, .8)
+    }
+    span.footable-toggle {
+  		font-size: 11px !important;
+  		color: #4682B4 !important;
+	}
+    input#filter {
+      height: 2.5rem;
+    }
+    select {
+      height: 2.5rem;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Title and intro -->
+    <div class="row">
+      <div class="large-12 medium-12 small-12 columns">
+        <h1>Tightening Labor Markets</h1>
+        <p class="intro">Colorado&rsquo;s unemployment dropped to 3.3 percent in September, its lowest level since May 2007, before the financial crisis. The table shows data for each Colorado county: number of people in the labor force, number employed, number unemployed, unemployment rate and the last year the unemployment rate was this low. Click the column headers to sort the data.</p>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="row">
+      <div class="large-12 medium-12 small-12 columns">
+        <table class="unemployment-table" data-filter="#filter" data-page-size="75">
+          <thead>
+            <tr>
+              <th data-toggle="true" data-sort-initial="ascending">State</th>
+    		      <th data-type="numeric">Info<br>access</th>
+    		      <th data-type="numeric">Political<br>financing</th>
+              <th data-type="numeric">Electoral oversight</th>
+    		    </tr>
+          </thead>
+          <tbody>
+          </tbody>
+          <tfoot class="hide-if-no-paging">
+            <tr>
+              <td colspan="4">
+        				<div class="pagination pagination-centered hide-if-no-paging"></div>
+        			</td>
+            </tr>
+          </tfoot>
+        </table>
+        <p class="source">Source: Bureau of Labor Statistics / The Denver Post</p>
+      </div>
+    </div>
+
+    <script>
+
+      function create_row (item) {
+      var row = $('<tr><td style="font-weight: bold">' + item['state'] + '</td><td class="' + item['publicInfoGrade'] + '">' + item['publicInfo'] + '</td><td class="' + item['politicalFinancingGrade'] + '">'+ item['politicalFinancing'] + '</td><td class="' + item['electoralOversightGrade'] + '">' + item['electoralOversight'] + '</td></tr>');
+        return row;
+      }
+
+      $.ajax({
+        url : 'sunshine-data.js',
+        dataType : 'json',
+        success : function(data) {
+		    $.each(data, function(index, item){
+			  var row = create_row(item);
+			  $('table tbody').append(row);
+			});
+			$('table').trigger('footable_initialize');
+	  	}
+	  });
+
+		$(function () {
+  		  $('table').footable({ bookmarkable: { enabled: true }}).bind({
+  		    'footable_filtering': function (e) {
+  		      var selected = $('#sport,#graduation-year').find(':selected').text();
+  		      var items = selected.split(' ')
+  		      if (selected && selected.length > 0) {
+  		        e.filter += (e.filter && e.filter.length > 0) ? ' ' + selected : selected;
+  		        e.clear = !e.filter;
+  		      }
+  		    },
+  		    'footable_filtered': function() {
+  		      var count = $('table.footable tbody tr:not(.footable-filtered)').length;
+  		      $('.row-count').html(count + ' rows found');
+  		    }
+  		  });
+    		$('.clear-filter').click(function (e) {
+    		  e.preventDefault();
+    		  $('.filter-type').val('');
+    		  $('.filter-category').val('');
+    		  $('.filter-date').val('');
+    		  $('table.preps').trigger('footable_clear_filter');
+    		  $('.row-count').html('');
+    		});
+  		  $('.filter-type').change(function (e) {
+  		    e.preventDefault();
+  		    $('table.preps').data('footable-filter').filter( $('#filter').val() );
+  		  });
+    		$('.filter-category').change(function (e) {
+    		  e.preventDefault();
+    		  $('table.preps').data('footable-filter').filter( $('#filter').val() );
+    		});
+    		$('.filter-date').change(function (e) {
+    		  e.preventDefault();
+    		  $('table.preps').data('footable-filter').filter( $('#filter').val() );
+    		});
+      });
+      </script>
+
+    <script src="http://extras.denverpost.com/foundation/js/foundation.min.js"></script>    
+  </body>
+</html>
