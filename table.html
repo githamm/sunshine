@@ -20,7 +20,7 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Scripts -->
-    
+
     <script src="http://extras.denverpost.com/foundation/js/vendor/modernizr.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
     <script>
@@ -71,18 +71,19 @@
     <div class="row">
       <div class="large-12 medium-12 small-12 columns">
         <h1>Colorado: Transparency and accountability</h1>
-        <p class="intro">The Center for Public Integrity graded states on 13 transparency and accountability categories. Overall, Colorado received a D+ with a score of 67. Explore how states rate in the table. Click the column headers to sort the data; click the + sign for more information.</p>
+        <p class="intro">The Center for Public Integrity graded states in <a href="#category-descriptions">13 transparency and accountability categories</a>. Overall, Colorado received a D+ with a score of 67. Explore how states rate in the table: Click the column headers to sort the data; click the + sign to see all categories.</p>
       </div>
     </div>
 
     <div class="row">
       <div class="large-12 medium-12 small-12 columns">
         <div id="legend">
-          <div id="circle" style="background-color: rgba(0,175,0,0.6)">A</div>
-          <div id="circle" style="background-color: rgba(0,175,0,0.6)">B</div>
-          <div id="circle" style="background-color: rgba(0,175,0,0.6)">C</div>
-          <div id="circle" style="background-color: rgba(0,175,0,0.6)">D</div>
-          <div id="circle" style="background-color: rgba(0,175,0,0.6)">F</div>
+          <div id="legend-text">GRADE</div>
+          <div id="circle" style="background-color: rgba(0,175,0,0.7)">A</div>
+          <div id="circle" style="background-color: rgba(0,175,0,0.4)">B</div>
+          <div id="circle" style="background-color: rgba(245,245,0,0.4)">C</div>
+          <div id="circle" style="background-color: rgba(176,0,0,0.4)">D</div>
+          <div id="circle" style="background-color: rgba(176,0,0,0.7)">F</div>
         </div>
       </div>
     </div>
@@ -94,14 +95,14 @@
           <thead>
             <tr>
               <th data-toggle="true" data-sort-initial="ascending">State</th>
-              <th data-type="numeric">Overall</th>
-    		      <th data-type="numeric">Public<br>access to<br>information</th>
-    		      <th data-type="numeric">Political<br>financing</th>
-              <th data-hide="all" data-type="numeric">Electoral<br>oversight</th>
-              <th data-type="numeric">Executive<br>accountability</th>
-              <th data-type="numeric">Legislative<br>accountability</th>
-              <th data-type="numeric">Judicial<br>accountability</th>
-              <th data-type="numeric">Budget<br>process</th>
+              <th data-type="numeric">Overall rank (score)</span></th>
+    		      <th data-type="numeric">Public access to information</th>
+    		      <th data-hide="phone" data-type="numeric">Political financing</th>
+              <th data-hide="all" data-type="numeric">Electoral oversight</th>
+              <th data-hide="phone" data-type="numeric">Executive accountability</th>
+              <th data-hide="phone" data-type="numeric">Legislative accountability</th>
+              <th data-hide="phone, tablet" data-type="numeric">Judicial accountability</th>
+              <th data-hide="phone, tablet" data-type="numeric">Budget process</th>
               <th data-hide="all" data-type="numeric">Civil service mgmt</th>
               <th data-hide="all" data-type="numeric">Procurement</th>
               <th data-hide="all" data-type="numeric">Internal auditing</th>
@@ -121,6 +122,23 @@
           </tfoot>
         </table>
         <p class="source">Source: <a href="http://www.publicintegrity.org/2015/11/09/18822/how-does-your-state-rank-integrity">The Center for Public Integrity</a></p>
+        <div id="category-descriptions"></div>
+        <h4>Category descriptions</h4>
+        <ul>
+          <li><strong>Public Access to Information</strong> Do citizens have a legal right of access to information?</li>
+          <li><strong>Political Financing</strong> Are there regulations governing the financing of candidates and political parties?</li>
+          <li><strong>Electoral Oversight</strong> Does the law mandate an independent oversight entity?</li>
+          <li><strong>Executive Accountability</strong> Can the chief executive be held accountable for his/her actions?</li>
+          <li><strong>Legislative Accountability</strong> Can members of the legislature be held accountable for their actions?</li>
+          <li><strong>Judicial Accountability</strong> Can members of the judiciary be held accountable for their actions?</li>
+          <li><strong>State Budget Processes</strong> Can the legislature provide input into the state budget?</li>
+          <li><strong>State Civil Service Management</strong> Are there regulations for the state civil service encompassing, at least, the managerial and professional staff?</li>
+          <li><strong>Procurement</strong> Is the public procurement process effective?</li>
+          <li><strong>Internal Auditing</strong> Is there an audit institution or equivalent agency covering the entire state's public sector?</li>
+          <li><strong>Lobbying Disclosure</strong> Is there a clear definition of a lobbyist?</li>
+          <li><strong>Ethics Enforcement Agencies</strong> Are there laws and regulations to promote and protect a professional ethics enforcement agency (or set of agencies)?</li>
+          <li><strong>State Pension Fund Management</strong> Are there laws and regulations requiring that state-run pension funds be managed transparently?</li>
+        </ul>
       </div>
     </div>
 
@@ -181,6 +199,6 @@
       });
       </script>
 
-    <script src="http://extras.denverpost.com/foundation/js/foundation.min.js"></script>    
+    <script src="http://extras.denverpost.com/foundation/js/foundation.min.js"></script>
   </body>
 </html>

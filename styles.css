@@ -82,7 +82,7 @@
 		border-top: solid 2px rgba(0,0,0,0.2);
 	}
 	table {
-		width: 100%;
+		margin-top: 30px;
 	}
 	table tr:nth-of-type(even) {
     background-color: transparent !important;
@@ -91,9 +91,9 @@
 		text-align: left;
 	}
 	td {
-		border: 1px solid gray;
+		border: 1px solid black;
 	}
-	tr.grade-c {
+	/* tr.grade-c {
 		background-color: rgba(245,245,0,0.2);
 	}
 	tr.grade-c-minus {
@@ -107,7 +107,7 @@
 	}
 	tr.grade-d-minus {
 		background-color: rgba(238,118,13,1.0);
-	}
+	} */
 	td.grade-a {
 		background-color: rgba(0,175,0,0.6);
 	}
@@ -135,5 +135,17 @@
 		border-radius: 15px;
 		padding-top: 3px;
 		text-align: center;
+		font-family: "Oswald" Arial sans-serif;
+		font-weight: 400;
+		float: left;
+		margin-right: 10px;
+	}
+	#legend-text {
+		color: rgba(0,0,0,0.3);
+		font-family: "Oswald" Arial sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		padding-top: 3px;
+		margin-right: 8px;
 		float: left;
 	}
