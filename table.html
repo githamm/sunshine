@@ -70,8 +70,20 @@
     <!-- Title and intro -->
     <div class="row">
       <div class="large-12 medium-12 small-12 columns">
-        <h1>Tightening Labor Markets</h1>
-        <p class="intro">Colorado&rsquo;s unemployment dropped to 3.3 percent in September, its lowest level since May 2007, before the financial crisis. The table shows data for each Colorado county: number of people in the labor force, number employed, number unemployed, unemployment rate and the last year the unemployment rate was this low. Click the column headers to sort the data.</p>
+        <h1>Colorado: Transparency and accountability</h1>
+        <p class="intro">The Center for Public Integrity graded states on 13 transparency and accountability categories. Overall, Colorado received a D+ with a score of 67. Explore how states rate in the table. Click the column headers to sort the data; click the + sign for more information.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 medium-12 small-12 columns">
+        <div id="legend">
+          <div id="circle" style="background-color: rgba(0,175,0,0.6)">A</div>
+          <div id="circle" style="background-color: rgba(0,175,0,0.6)">B</div>
+          <div id="circle" style="background-color: rgba(0,175,0,0.6)">C</div>
+          <div id="circle" style="background-color: rgba(0,175,0,0.6)">D</div>
+          <div id="circle" style="background-color: rgba(0,175,0,0.6)">F</div>
+        </div>
       </div>
     </div>
 
@@ -82,29 +94,40 @@
           <thead>
             <tr>
               <th data-toggle="true" data-sort-initial="ascending">State</th>
-    		      <th data-type="numeric">Info<br>access</th>
+              <th data-type="numeric">Overall</th>
+    		      <th data-type="numeric">Public<br>access to<br>information</th>
     		      <th data-type="numeric">Political<br>financing</th>
-              <th data-type="numeric">Electoral oversight</th>
+              <th data-hide="all" data-type="numeric">Electoral<br>oversight</th>
+              <th data-type="numeric">Executive<br>accountability</th>
+              <th data-type="numeric">Legislative<br>accountability</th>
+              <th data-type="numeric">Judicial<br>accountability</th>
+              <th data-type="numeric">Budget<br>process</th>
+              <th data-hide="all" data-type="numeric">Civil service mgmt</th>
+              <th data-hide="all" data-type="numeric">Procurement</th>
+              <th data-hide="all" data-type="numeric">Internal auditing</th>
+              <th data-hide="all" data-type="numeric">Lobbying disclosure</th>
+              <th data-hide="all" data-type="numeric">Ethics enforcement agencies</th>
+              <th data-hide="all" data-type="numeric">State pension fund mgmt</th>
     		    </tr>
           </thead>
           <tbody>
           </tbody>
           <tfoot class="hide-if-no-paging">
             <tr>
-              <td colspan="4">
+              <td colspan="15">
         				<div class="pagination pagination-centered hide-if-no-paging"></div>
         			</td>
             </tr>
           </tfoot>
         </table>
-        <p class="source">Source: Bureau of Labor Statistics / The Denver Post</p>
+        <p class="source">Source: <a href="http://www.publicintegrity.org/2015/11/09/18822/how-does-your-state-rank-integrity">The Center for Public Integrity</a></p>
       </div>
     </div>
 
     <script>
 
       function create_row (item) {
-      var row = $('<tr><td style="font-weight: bold">' + item['state'] + '</td><td class="' + item['publicInfoGrade'] + '">' + item['publicInfo'] + '</td><td class="' + item['politicalFinancingGrade'] + '">'+ item['politicalFinancing'] + '</td><td class="' + item['electoralOversightGrade'] + '">' + item['electoralOversight'] + '</td></tr>');
+      var row = $('<tr><td style="font-weight: bold">' + item['state'] + '</td><td class="' + item['overallGrade'] + '">' + item['overall'] + '</td><td class="' + item['publicInfoGrade'] + '">' + item['publicInfo'] + '</td><td class="' + item['politicalFinancingGrade'] + '">'+ item['politicalFinancing'] + '</td><td class="' + item['electoralOversightGrade'] + '">' + item['electoralOversight'] + '</td><td class="' + item['executiveAccountabilityGrade'] + '">' + item['executiveAccountability'] + '</td><td class="' + item['legislativeAccountabilityGrade'] + '">' + item['legislativeAccountability'] +  '</td><td class="' + item['judicialAccountabilityGrade'] + '">' + item['judicialAccountability'] + '</td><td class="' + item['budgetProcessGrade'] + '">' + item['budgetProcess']  + '</td><td class="' + item['civilServiceGrade'] + '">' + item['civilService'] + '</td><td class="' + item['procurementGrade'] + '">' + item['procurement'] + '</td><td class="' + item['internalAuditingGrade'] + '">' + item['internalAuditing'] + '</td><td class="' + item['lobbyingDisclosureGrade'] + '">' + item['lobbyingDisclosure'] + '</td><td class="' + item['ethicsEnforcementGrade'] + '">' + item['ethicsEnforcement'] + '</td><td class="' + item['pensionFundGrade'] + '">' + item['pensionFund'] + '</td></tr>');
         return row;
       }
 
