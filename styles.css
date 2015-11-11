@@ -26,11 +26,11 @@
 		display: table;
 		margin: 22px 0px 0px 0px;
 	}
-	.score-box {
+	.score-box-yes {
 		width: 30%;
 		height: 82px;
 		float: left;
-		background-color: rgba(74,160,44,0.7);
+		background-color: rgba(0,175,0,0.4);
 	}
 	.score-yes {
 		font-size: 27px;
@@ -38,15 +38,17 @@
 		text-align: center;
 		margin-top: 15px;
 	}
-	.score-no {
+	.score-box-no {
 		width: 30%;
-		height: 72px;
+		height: 82px;
 		float: left;
-		background-color: rgba(161,45,76,0.7);
+		background-color: rgba(176,0,0,0.6);
+	}
+	.score-no {
 		font-size: 27px;
 		font-weight: bold;
 		text-align: center;
-		padding-top: 10px;
+		padding-top: 15px;
 	}
 	.score-moderate {
 		width: 30%;
