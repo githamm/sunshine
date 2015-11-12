@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+  	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colorado: Transparency and Accountability | The Denver Post</title>
+
+    <!-- Style sheets -->
+    <link href="http://extras.denverpost.com/projects/2015/salary-tables/css/footable.core.css?v=2-0-1" rel="stylesheet" type="text/css"/>
+    <link href="http://extras.denverpost.com/projects/2015/salary-tables/demos/css/footable-demos.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="http://extras.denverpost.com/foundation/css/foundation.css" />
+    <link rel="stylesheet" href="http://extras.denverpost.com/foundation/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="http://extras.denverpost.com/weather-closures/weather-closures-styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="shortcut icon" href="http://extras.mnginteractive.com/live/media/favIcon/dpo/favicon.ico" type="image/x-icon" />
+
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Scripts -->
+		<script src="http://extras.denverpost.com/foundation/js/vendor/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+      if (!window.jQuery) { document.write('<script src="http://extras.denverpost.com/projects/2015/salary-tables/demos/js/jquery-1.9.1.min.js"><\/script>'); }
+    </script>
+    <script src=" http://extras.denverpost.com/projects/2015/salary-tables/js/footable.js?v=2-0-1" type="text/javascript"></script>
+    <script src="http://extras.denverpost.com/projects/2015/salary-tables/js/footable.sort.js?v=2-0-1" type="text/javascript"></script>
+    <script src="http://extras.denverpost.com/projects/2015/salary-tables/js/footable.filter.js?v=2-0-1" type="text/javascript"></script>
+    <script src="http://extras.denverpost.com/projects/2015/salary-tables/js/footable.paginate.js?v=2-0-1" type="text/javascript"></script>
+    <script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+	</head>
+	<body>
+   	<!-- Title and intro -->
+    <div class="row">
+      <div class="large-12 medium-12 small-12 columns">
+        <h1>Colorado: Transparency and accountability</h1>
+        <p class="intro">The Center for Public Integrity graded states in <a href="#category-descriptions">13 transparency and accountability categories</a>. Overall, Colorado received a D+ with a score of 67. Explore how states rate in the table: Click the column headers to sort the data; click the + sign to see all categories.</p>
+        <a href="#colorado-info"><div id="info-button">Click to see detailed information about<br>access to information in Colorado</div></a>
+      </div>
+    </div>
+
+    <!-- Legend -->
+		<div class="row">
+      <div class="large-12 medium-12 small-12 columns">
+        <div id="legend">
+          <div id="legend-text">GRADE</div>
+          <div id="circle" style="background-color: rgba(0,175,0,0.7)">A</div>
+          <div id="circle" style="background-color: rgba(0,175,0,0.4)">B</div>
+          <div id="circle" style="background-color: rgba(245,245,0,0.35)">C</div>
+          <div id="circle" style="background-color: rgba(176,0,0,0.4)">D</div>
+          <div id="circle" style="background-color: rgba(176,0,0,0.7)">F</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="row">
+      <div class="large-12 medium-12 small-12 columns">
+        <table class="sunshine-table" data-filter="#filter" data-page-size="75">
+          <thead>
+            <tr>
+              <th data-toggle="true">State</th>
+              <th data-type="numeric" data-sort-initial="ascending">Overall rank (score)</span></th>
+    		      <th data-type="numeric">Public access to information</th>
+    		      <th data-hide="phone" data-type="numeric">Political financing</th>
+              <th data-hide="all" data-type="numeric">Electoral oversight</th>
+              <th data-hide="phone" data-type="numeric">Executive accountability</th>
+              <th data-hide="phone" data-type="numeric">Legislative accountability</th>
+              <th data-hide="phone, tablet" data-type="numeric">Judicial accountability</th>
+              <th data-hide="phone, tablet" data-type="numeric">Budget process</th>
+              <th data-hide="all" data-type="numeric">Civil service mgmt</th>
+              <th data-hide="all" data-type="numeric">Procurement</th>
+              <th data-hide="all" data-type="numeric">Internal auditing</th>
+              <th data-hide="all" data-type="numeric">Lobbying disclosure</th>
+              <th data-hide="all" data-type="numeric">Ethics enforcement agencies</th>
+              <th data-hide="all" data-type="numeric">State pension fund mgmt</th>
+    		    </tr>
+          </thead>
+          <tbody>
+          </tbody>
+          <tfoot class="hide-if-no-paging">
+            <tr>
+              <td colspan="15">
+        				<div class="pagination pagination-centered hide-if-no-paging"></div>
+        			</td>
+            </tr>
+          </tfoot>
+        </table>
+        <p class="source">Source: <a href="http://www.publicintegrity.org/2015/11/09/18822/how-does-your-state-rank-integrity">The Center for Public Integrity</a></p>
+        <div id="category-descriptions"></div>
+        <h4>Category descriptions</h4>
+        <ul>
+          <li><strong>Public Access to Information</strong> Do citizens have a legal right of access to information?</li>
+          <li><strong>Political Financing</strong> Are there regulations governing the financing of candidates and political parties?</li>
+          <li><strong>Electoral Oversight</strong> Does the law mandate an independent oversight entity?</li>
+          <li><strong>Executive Accountability</strong> Can the chief executive be held accountable for his/her actions?</li>
+          <li><strong>Legislative Accountability</strong> Can members of the legislature be held accountable for their actions?</li>
+          <li><strong>Judicial Accountability</strong> Can members of the judiciary be held accountable for their actions?</li>
+          <li><strong>State Budget Processes</strong> Can the legislature provide input into the state budget?</li>
+          <li><strong>State Civil Service Management</strong> Are there regulations for the state civil service encompassing, at least, the managerial and professional staff?</li>
+          <li><strong>Procurement</strong> Is the public procurement process effective?</li>
+          <li><strong>Internal Auditing</strong> Is there an audit institution or equivalent agency covering the entire state's public sector?</li>
+          <li><strong>Lobbying Disclosure</strong> Is there a clear definition of a lobbyist?</li>
+          <li><strong>Ethics Enforcement Agencies</strong> Are there laws and regulations to promote and protect a professional ethics enforcement agency (or set of agencies)?</li>
+          <li><strong>State Pension Fund Management</strong> Are there laws and regulations requiring that state-run pension funds be managed transparently?</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Colorado-specific info -->
+    <script language="javascript" type="text/javascript">
+    function showHide(shID) {
+	    if (document.getElementById(shID)) {
+		    if (document.getElementById(shID+'-show').style.display != 'none') {
+			    document.getElementById(shID+'-show').style.display = 'none';
+			    document.getElementById(shID).style.display = 'block';
+		      }
+		    else {
+			    document.getElementById(shID+'-show').style.display = 'inline';
+			    document.getElementById(shID).style.display = 'none';
+		    }
+	    }
+    }
+    </script>
+
+		<div class="row" id="colorado-info">
+      <div class="large-12 medium-12 small-12 columns">
+      	<h2>Colorado: Public access to information</h2>
+				<div class="question">In law, citizens have a right of access to government information through a defined mechanism.</div>
+				<div class="score-box-yes">
+					<div class="score-yes">YES</div>
+				</div>
+				<div class="accordion">
+					<p class="score-all">ALL STATES // YES: 70% &bull; MODERATE: 26% &bull; NO: 4%</p>
+					<p>The Colorado Open Records Act, or CORA, is the state’s version of the Freedom of Information Act, which affords citizens a general access to public information. State law in Colorado also authorizes public access to some court records. <a href="#" id="sunshine-show" class="showLink" onclick="showHide('sunshine');return false;">Show more</a></p>
+					<div id="sunshine" class="more">
+						<p>The mechanism for citizens to access information in Colorado is to file an open records request. As the law’s legislative declaration says: “It is declared to be the public policy of this state that all public records shall be open for inspection by any person at reasonable times, except as … otherwise specifically provided by law.”</p>
+						<p>The open records laws of Colorado are also two-pronged: There’s CORA, and there’s the Criminal Justice Records Act (CJRA), which generally applies to law enforcement and the courts. Both specify that information can be accessed by asking the custodian of the record.</p>
+						<p>Colorado also has a Sunshine Law and Open Meetings Law, declaring it to be “a matter of statewide concern and the policy of this state that the formation of public policy is public business and may not be conducted in secret.”</p>
+						<p><a href="https://www.sos.state.co.us/pubs/info_center/files/CORA_Act.pdf">Colorado Open Records Act, Colorado Revised Statutes 24-72-201 to 24-72-309, 1963</a></p>
+						<p><a href="http://www.lexisnexis.com/hottopics/colorado/?app=00075&view=full&interface=1&docinfo=off&searchtype=get&search=C.R.S.+24-6-401">Colorado Sunshine Law Part 4. Open Meetings Law, C.R.S. 24-6-401 (2014)</a></p>
+						<p><a href="http://www.lexisnexis.com/hottopics/colorado/?app=00075&view=full&interface=1&docinfo=off&searchtype=get&search=C.R.S.+30-10-101">County Officers Article 10. County Officers Part 1. General Provisions C.R.S. 30-10-101 (2014)</a></p>
+						<p><a href="http://caselaw.findlaw.com/co-court-of-appeals/1599496.html">Gleason vs. Judicial Watch, Colorado Court of Appeals, April 26, 2012</a></p>
+						<p><a href="http://coloradofoic.org/bipartisan-bill-make-state-public-defenders-office-subject-cora/">“Bipartisan bill would make the state public defender’s office subject to CORA,” Jeffrey Roberts, Jan. 26, 2015</a></p>
+						<p>Confirmed with Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview.</p>
+						<p><i>A <strong>YES score</strong> is earned if, in law, there is a right to access government information, including  information on "open meetings" and a defined mechanism for citizens to access it. A YES can still be scored if exceptions for security, trade secrets, or individual privacy are made. A <strong>MODERATE score</strong> is earned if there is a general right, but no law or regulation operationalizes that right, it is vague, or does not clearly specify a mechanism to access the information. A <strong>NO score</strong> is earned if no such law exists.</i></p>
+						<p><a href="#" id="sunshine-hide" class="hideLink" onclick="showHide('sunshine');return false;">Show less</a></p>
+					</div>
+				</div>
+				<div class="question">In law, citizens have a right of access to private sector information through a defined mechanism.</div>
+	  		<div class="score-box-yes">
+	  			<div class="score-yes">YES</div>
+	  		</div>
+				<div class="accordion">
+					<p class="score-all">YES: 62% &bull; MODERATE: 32% &bull; NO: 6%</p>
+					<p>Public records are any records or writings in any form maintained or kept by a government entity for the use of public or official functions, which includes contracts with private entities. Information submitted to a government by private entities for performance on behalf of the government are subject to public records requests with some exemptions. <a href="#" id="sunshine2-show" class="showLink" onclick="showHide('sunshine2');return false;">Show more</a></p>
+					<div id="sunshine2" class="more">
+						<p>The mechanism for citizens to access information in Colorado is to file an open records request with the custodian.</p>
+						<p>Colorado has several factors for determining if and when private information should be public; much of that has been determined through case law rather than a general right to access under state statute or the constitution.</p>
+						<p>For instance, in Denver Post Corp. v. Stapleton Dev. Corp., 19 P.3d 36 (Colo. App. 2000), it was ruled:</p>
+						<p>“Whether a private entity is a "political subdivision" for purposes of the Colorado Open Records Act is determined by considering a nonexclusive list of nine factors examining the level of a public agency's involvement with the private entity. The factors include: (1) The level of public funding; (2) whether funds were commingled; (3) whether the activity was conducted on publicly owned property; (4) whether services contracted for were an integral part of the public agency's chosen decision-making process; (5) whether the private entity was performing a governmental function or a function the public agency would otherwise perform; (6) the extent of the public agency's involvement with, regulation of, or control over the private entity; (7) whether the private entity was created by the public agency; (8) whether the public agency has a substantial financial interest in the private entity; and (9) for whose benefit the private entity was functioning.” The Colorado Consumer Protection Act, meanwhile, gives the state attorney general the power to release or withhold information about consumer complaints against private businesses.</p>
+						<p><a href="https://www.sos.state.co.us/pubs/info_center/files/CORA_Act.pdf">Colorado Open Records Act, Colorado Revised Statutes 24-72-201 to 24-72-309, 1963</a></p>
+						<p><a href="https://www.coloradoattorneygeneral.gov/sites/default/files/CCPA%20-%202010%20Update.pdf">Colorado Consumer Protection Act</a></p>
+						<p>Denver Post Corp. v. Stapleton Dev. Corp., 19 P.3d 36 (Colo. App. 2000).</p>
+						<p>Confirmed with Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview.</p>
+						<p><i>A <strong>YES score</strong> is earned if, in law, there is a right to access private sector information related to government contracts or public service delivery and a defined mechanism for citizens to access it. A YES can still be scored if exceptions for security, trade secrets, or individual privacy are made. A <strong>MODERATE score</strong> is earned if there is a general right, but no law or regulation operationalizes that right, it is vague, or does not clearly specify a mechanism to access the information. A <strong>NO score</strong> is earned if no such law exists.</i></p>
+						<p><a href="#" id="sunshine2-hide" class="hideLink" onclick="showHide('sunshine2');return false;">Show less</a></p>
+					</div>
+				</div>
+	
+	<div id="wrap">
+		<div class="section">
+			<div class="question">In law, there is an entity/ies to monitor the application of access to information laws.</div>
+		  	<div class="score-box-no">
+		  		<div class="score-no">NO</div>
+		  	</div>
+		</div>
+		<div class="accordion"><p class="score-all">YES: 16% &bull; MODERATE: 34% &bull; NO: 50%</p>
+		<p>There is no public agency or entity in Colorado that monitors the application for access to information laws. Individuals seeking a record under the Colorado Open Records Act or the Criminal Justice Records Act must make a request through the “custodian” of a record. In other words, you have to ask the person or entity who is in possession of the information, and there is no entity that monitors the application of access to records held by custodians in Colorado. If there is a dispute it is relegated to the courts. <a href="#" id="sunshine3-show" class="showLink" onclick="showHide('sunshine3');return false;">Show more</a></p>
+		<div id="sunshine3" class="more">
+			<p><a href="http://www.lexisnexis.com/hottopics/colorado/?app=00075&view=full&interface=1&docinfo=off&searchtype=get&search=C.R.S.+24-72-201">Colorado Open Records Act, Colorado Revised Statutes 24-72-201 to 24-72-309, 1963</a></p>
+			<p>Confirmed with Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview.</p>
+			<p><i>A <strong>YES score</strong> is earned if the entity mandated to monitor access to information laws has the authority to independently initiate investigations into alleged violations and to sanction offenders. A <strong>MODERATE score</strong> is earned if the entity has the legal authority to initiate investigations independently, but no authority to impose sanctions. A <strong>NO score</strong> is earned if no such law exists.</i></p>
+			<p><a href="#" id="sunshine3-hide" class="hideLink" onclick="showHide('sunshine3');return false;">Show less</a></p>
+		</div>
+		</div>
+	</div>
+
+	<div id="wrap">
+		<div class="section">
+			<div class="question">In law, citizens have a right of appeal if access to government information is denied.</div>
+			<div class="score-box-moderate">
+				<div class="score-moderate">MODERATE</div>
+			</div>
+		</div>
+		<div class="accordion"><p class="score-all">YES: 38% &bull; MODERATE: 62% &bull; NO: 0%</p>
+		<p>If a custodian denies an open records request in Colorado, the law states the record seeker must use the court system as a remedy. There is no administrative appeals process in Colorado like there is at the federal level. <a href="#" id="sunshine4-show" class="showLink" onclick="showHide('sunshine4');return false;">Show more</a></p>
+		<div id="sunshine4" class="more">
+			<p><a href="https://www.sos.state.co.us/pubs/info_center/files/CORA_Act.pdf">Colorado Open Records Act, 24-72-307, Challenge to accuracy and completeness - appeals</a></p>
+			<p>Confirmed with Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview.</p>
+			<p><i>A <strong>YES score</strong> is earned if the law defines an administrative appeals process for rejected information requests. Citizens do not need to go through the court system to appeal. A <strong>MODERATE score</strong> is earned if, in law, access to information appeals must be resolved through the court system. A <strong>NO score</strong> is earned if the law is mute about where appeals should be decided.</i></p>
+			<p><a href="#" id="sunshine4-hide" class="hideLink" onclick="showHide('sunshine4');return false;">Show less</a></p>
+		</div>
+		</div>
+	</div>
+
+	<div id="wrap">
+		<div class="section">
+			<div class="question">In law, there is an open data law, requiring the government to publish data online in an open format.</div>
+			<div class="score-box-no">
+		  		<div class="score-no">NO</div>
+		  	</div>
+		</div>
+		<div class="accordion"><p class="score-all">YES: 12% &bull; MODERATE: 4% &bull; NO: 84%</p>
+		<p>Colorado does not have an open data law requiring the government to publish data online in an open format. <a href="#" id="sunshine5-show" class="showLink" onclick="showHide('sunshine5');return false;">Show more</a></p>
+		<div id="sunshine5" class="more">
+			<p>Some public records, however, do appear online. In 2009, a Colorado governor issued an executive order establishing the Transparency Online Project, which stated in part: “The Open Meetings Act and the Colorado Open Records Act provide Colorado's citizens with a strong expectation of accountability by providing open access to the state's public records and meetings. The advent of the internet provides new opportunities for state government to foster transparency and accountability.” A new transparency web site launched Jan. 1, 2015.</p>
+			<p>“The TOP system is not intended to replace Colorado citizen's access to public information allowed by the Colorado Open Records Act,” reads a state government website about the transparency project. “Rather it is intended to reduce the time and cost associated with open records requests and to maximize convenience for state citizens in accessing state financial information. Any information that is not available in the TOP system remains available to the public in accordance with the Colorado Open Records Act.”</p>
+			<p><a href="http://www.lexisnexis.com/hottopics/colorado/?app=00075&view=full&interface=1&docinfo=off&searchtype=get&search=C.R.S.+24-72-201">Colorado Open Records Act, Colorado Revised Statutes 24-72-201 to 24-72-309, 1963</a></p>
+			<p>Confirmed with Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview. About the <a href="https://www.colorado.gov/apps/oit/transparency/about.html">Colorado Transparency Project</a>, accessed June 5, 2015</p>
+			<p><i>A <strong>YES score</strong> is earned if the law requires the government to make data easily accessible online and in machine readable format. A <strong>MODERATE score</strong> is earned if the law requires the government to make information available easily accessible online. A <strong>NO score</strong> is earned if no such law exists.</i></p>
+			<p><a href="#" id="sunshine5-hide" class="hideLink" onclick="showHide('sunshine5');return false;">Show less</a></p>
+		</div>
+		</div>
+	</div>
+
+	<div id="wrap">
+	  <div class="section">
+	    <div class="question">In practice, branches of government, state agencies and government officials do not claim to be exempt from access to information laws.</div>
+	    <div class="score-box-moderate">
+	    	<div class="score-moderate">50</div>
+		</div>
+		</div>
+		<div class="accordion"><p class="score-all">100: 4% &bull; 75: 26% &bull; 50: 52% &bull; 25: 16% &bull; 0: 2%</p>
+		<p>Colorado’s judicial branch is exempt from some aspects of the Colorado Open Records Act, based on a 2012 ruling by the state Court of Appeals that said the Colorado Supreme Court had decided that was the case in 1999. <a href="#" id="sunshine6-show" class="showLink" onclick="showHide('sunshine6');return false;">Show more</a></p>
+		<div id="sunshine6" class="more">
+		<p>“There’s a huge, gaping hole right now,” says Steve Zansberg, a media attorney in Denver who represents newspapers and broadcasters. “One of the three branches of government is not subject to our open records act by its own ruling.”</p>
+		<p>This has stopped a background information company from getting certain records from Colorado’s judiciary, and blocked Denver’s NBC affiliate News9 from being able to find out how much taxpayer money a public defender’s office was spending on death penalty cases. The public defender’s office cited case law in denying the TV station open records requests.</p>
+		<p>Beyond the judiciary, public officials are not exempt from Colorado's open records laws, according to Jeffrey Roberts, director of the Colorado Freedom of Information Coalition. But that doesn't mean they don't know how to keep a record secret if they want. One aspect could be the work-product exemption in the law. Before a bill is introduced, anything that goes into drafting or creation could be considered a work product and be exempt from disclosure. “There are things that they do that can be exempt, and a major aspect of that could be all the work that they do that goes into creating a proposal that becomes legislation,” Roberts says. In other words, there are exemptions in the law.</p>
+		<p>Another area where exemptions cause hurdles to public access to information is law enforcement. "Records of official action,” like arrest reports, are generally public. But state law authorizes local police to decide whether to release a wide range of other records on a case-by-case basis, and to withhold them if they believe release would be “contrary to the public interest.”</p>
+		<p>Another way a public entity might try to keep public information secret is by using an attorney-client privilege.</p>
+		<p>Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview.</p>
+		<p>Jefferey Roberts, director of the Colorado Freedom of Information Coalition, during a Dec. 17, 2014 phone interview.</p>
+		<p><a href="http://www.cjr.org/united_states_project/colorado_police_body_cam_access_to_footage.php?page=all">“More cops are wearing body cams. When does the footage become a public record?” Columbia Journalism Review, Sept. 23, 2014</a></p>
+		<p><a href="http://www.thedenverchannel.com/news/call7-investigators/open-records/contrary-to-the-public-interest-questioning-the-police">“Contrary to the public interest,” ABC Channel 7, Denver, 2013</a></p>
+		<p><a href="http://www.denverpost.com/news/ci_25965179/colorado-springs-seeks-avoid-disclosing-e-mails-drake">“Colorado Springs Seeks to Avoid Disclosing E-mails on Drake Fire,” The Denver Post, June 15, 2014</a></p>
+		<p><i>A <strong>100 score</strong> is earned if no state agencies, branches of government or government officials claim to be exempt from access to information laws, including email correspondence and "open meetings." A 100 score can also be earned if codified exemptions are correctly claimed. A <strong>50 score</strong> is earned if some agencies, some branches of government, or some government officials claim to be exempt from access to information laws.  A <strong>0 score</strong> is earned if exemptions are claimed regularly.</i></p>
+		<p><a href="#" id="sunshine6-hide" class="hideLink" onclick="showHide('sunshine6');return false;">Show less</a></p>
+		</div>
+		</div>
+	</div>
+
+	<div id="wrap">
+	  <div class="section">
+	    <div class="question">In practice, private sector information related to government information is not claimed to be exempt from access to information laws.</div>
+	   	<div class="score-box-moderate">
+	   		<div class="score-moderate">50</div>
+	   	</div>
+	  </div>
+    <div class="accordion"><p class="score-all">100: 8% &bull; 75: 36% &bull; 50: 42% &bull; 25: 12% &bull; 0: 2%</p>
+    <p>The general rule is that any records that the government has that are associated with any contracting the government does with private entities is subject to the Open Records Act. “Those records are available, and there is an exemption for certain discreet categories of information,” says Steve Zansberg, a media attorney in Denver who represents newspapers and broadcasters in Colorado. <a href="#" id="sunshine7-show" class="showLink" onclick="showHide('sunshine7');return false;">Show more</a></p>
+		<div id="sunshine7" class="more">
+		<p>In Colorado, the public doesn’t always get information of interest when it comes to the private sector doing business with the government.</p>
+		<p>Sometimes entities will exert an exemption, like a public hospital that didn't want to disclose salaries of its surgeons. That case went to the Court of Appeals where the ruling made the data public. “There’s very good case law that the government can’t simply promise to keep information confidential and on that basis alone withhold information,” Zansberg says. “It has to be confidential, proprietary and the disclosure of which would cause competitive harm to the private entity.”</p>
+		<p>When it comes to government contracts and public service deliverability, contracts made “by any government agency involving the expenditure of public records are open to inspection under CORA,” says Jeffrey Roberts, director of the Colorado Freedom of Information Coalition. “After a contract has been let, the bidding documents of successful and unsuccessful bidders are open.”</p>
+		<p>One recent incident that stands out involved a government transportation project that used a private firm partner, Plenary Roads Denver.</p>
+		<p>In February 2014, the editorial board of the Loveland Reporter-Herald echoed citizen complaints and a “public outcry” about a lack of transparency involved in a decades-long state transportation project. “Considering that $425 million in tax dollars and public property are involved, the full 600-page agreement between the transportation department and the firm Plenary Roads Denver should have been released much earlier,” the paper said in an editorial.</p>
+		<p>Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview.</p>
+		<p>Jeffrey Roberts, director of the Colorado Freedom of Information Coalition, in a Dec. 22, 2014 email.</p>
+		<p><a href="http://www.thedenverchannel.com/news/call7-investigators/open-records/colorado-attorney-general-seeks-judges-affirmation-to-keep-complaints-against-business-secret">“Colorado Attorney General seeks judge's affirmation to keep complaints against business secret,” Aug. 15, 2013, ABC News7 Denver</a></p>
+		<p><a href="http://www.9news.com/story/news/local/2015/01/22/the-hidden-cost-of-the-death-penalty-in-colorado/22190743/">“The hidden cost of the death penalty in Colorado,” News9 Denver, Jan. 22, 2015</a></p>
+		<p><a href="http://coloradofoic.org/court-ruling-ag-consumer-complaints-broader-implications/">Colorado Freedom of Information Coalition, Dec. 13, 2013</a></p>
+		<p><a href="http://coloradofoic.org/files/2013/12/KeliRabonVSuthers.pdf">Keli Rabon & Scripps Media, Inc. vs (Colorado Attorney General) John Suthers, Dec. 6 2013</a></p>
+		<p><a href="http://coloradofoic.org/files/2013/12/SuthersvScripps.pdf">Attorney General John Suthers vx. E.W. Scripps Company, Aug. 15, 2013 (legal motion)</a></p>
+		<p><a href="http://www.reporterherald.com/opinion/editorial/ci_25226972/highway-36-work-needed-secrecy-not">“Highway 36 work needed; secrecy, not,” Loveland Reporter-Herald, Feb. 25, 2014</a></p>
+		<p><a href="#" id="sunshine7-hide" class="hideLink" onclick="showHide('sunshine7');return false;">Show less</a></p>
+		</div>
+		</div>
+	</div>
+
+	<div id="wrap">
+	  <div class="section">
+	    <div class="question">In practice, the calendars of both the governor and legislators are available to the public.</div>
+	    <div class="score-box-no">
+		  	<div class="score-no">0</div>
+		</div>
+	  </div>
+	  <div class="accordion"><p class="score-all">100: 0% &bull; 75: 0% &bull; 50: 13% &bull; 25: 25% &bull; 0: 12%</p>
+	  <p>The governor's calendar is not available on his website. A member of the press or public looking for the calendar or itinerary of a lawmaker or the governor might have to make an official open records request. The Colorado Ethics Watch regularly requests the governor's calendars and posts them online (after the fact). <a href="#" id="sunshine8-show" class="showLink" onclick="showHide('sunshine8');return false;">Show more</a></p>
+		<div id="sunshine8" class="more">
+		<p>Democratic Gov. John Hickenlooper used to publicize his daily calendar, according to his spokeswoman, Kathy Green. But that changed in 2013 after a former inmate at a Colorado prison showed up to the house of a top prison official and murdered him. Since then, in the interest of public safety, the governor's schedule and itinerary are sent to trusted members of the state press corps, Green says.</p>
+		<p>The calendars of lawmakers are not publicly available on the Colorado General Assembly's official website.</p>
+		<p>According to Peter Marcus, a Statehouse reporter for The Durango Herald newspaper, “Overall, offices for elected officials in Colorado do a pretty good job letting the press know where they'll be over the course of the week,” As a reporter, Marcus is on the advisory list for the governor's public events.</p>
+		<p>“I've never really felt like the elected officials in Colorado are actively trying to avoid the press or public, aside from a few isolated incidents,” Marcus says. “And even in those cases, we have clear sunshine laws in the state, so it's pretty easy to bust into a closed-door meeting if there are a couple of elected officials meeting, and it's usually pretty easy to find where they're going to be.”</p>
+		<p>Kathy Green, spokeswoman for Democratic Gov. John Hickenlooper, in a Dec. 24, 2014, phone call.</p>
+		<p>Peter Marcus, Statehouse reporter for The Durango Herald newspaper, in a Dec. 22, e-mail.</p>
+		<p><a href="http://www.colorado.gov/cs/Satellite/GovHickenlooper/CBON/1251592968310">Governor John Hickernlooper's government website, accessed on April 20, 2015</a></p>
+		<p><a href="http://www.leg.state.co.us/clics/clics2014A/cslFrontPages.nsf/HomeSplash?OpenForm">Colorado general Assembly's official website, accessed on April 20, 2015</a></p>
+		<p><a href="https://www.scribd.com/collections/3520634/Colorado-Public-Official-Calendars">Public Official Calendars, Colorado, accessed June 2015</a></p>
+		<p><a href="#" id="sunshine8-hide" class="hideLink" onclick="showHide('sunshine8');return false;">Show less</a></p>
+		</div>
+		</div>
+	</div>
+
+	<div id="wrap">
+	  <div class="section">
+	    <div class="question">In practice, citizens receive responses to access to information requests within a reasonable time period and at no cost.</div>
+	    <div class="score-box-moderate">
+	    	<div class="score-moderate">50</div>
+	    </div>
+	  </div>
+	  <div class="accordion"><p class="score-all">100: 2% &bull; 75: 20% &bull; 50: 40% &bull; 25: 30% &bull; 0: 8%</p>
+		<p>Government agencies sometimes withhold more information than the law warrants, and sometimes it can be a costly, lengthy process for members of the public to go to court and fight for records when requests are denied.</p>
+		<p>Because Colorado doesn't have a centralized open records processing entity, “It depends on the agency you're asking, it depends on who is asking,” said Jeffrey Roberts, director of the Colorado Freedom of Information Coalition. The law says if records are available they should be available immediately. But, a new aspect of CORA is that research and retrieval is free for the first hour, which covers most requests. If it takes longer than that, a custodian can charge up to $30 an hour. The new law change is a bit of a double-edged sword. “In some places that's better than it used to be,” Roberts said. “Some governments took the opportunity to raise it to $30 when they were charging $20.”  <a href="#" id="sunshine9-show" class="showLink" onclick="showHide('sunshine9');return false;">Show more</a></p>
+		<div id="sunshine9" class="more">
+		<p>Even though public records in Colorado are not supposed prohibitively expensive, they can be, and there are documented cases in media."</p>
+		<p>Jefferey Roberts, director of the Colorado Freedom of Information Coalition, during in a phone interview on Dec. 17, 2014.</p>
+		<p><a href="http://coloradofoic.org/475-per-hour-rate-review-public-records/">“Estimate citing $475-per-hour rate to review a public records request “issued in error,” FOIC, Nov. 21, 2014</a></p>
+		<p><a href="http://www.thedenverchannel.com/news/call7-investigators/open-records/contrary-to-the-public-interest-questioning-the-police">“Contrary to the public interest: The high cost of public information,” ABC Channel 7, Denver, 2013</a></p>
+		<p><a href="#" id="sunshine9-hide" class="hideLink" onclick="showHide('sunshine9');return false;">Show less</a></p>
+		</div>
+		</div>
+	</div>
+
+	<div id="wrap">
+	  <div class="section">
+	    <div class="question">In practice, access to information requests are fully answered and/or detailed reasons for denying information are provided.</div>
+	    <div class="score-box-moderate">
+	    	<div class="score-moderate">50</div>
+	    </div>
+	  </div>
+	  <div class="accordion"><p class="score-all">100: 6% &bull; 75: 32% &bull; 50: 46% &bull; 25: 16% &bull; 0: 0%</p>
+	  <p>In Colorado, the evidence is mixed. While some government agencies provide specific reasons for access request denials, others do not. <a href="#" id="sunshine10-show" class="showLink" onclick="showHide('sunshine10');return false;">Show more</a></p>
+		<div id="sunshine10" class="more">
+		<p>One recent example of a government trying to withhold information was when the Jefferson County school district denied an open records request to view the names of public school teachers who had participated in a sick-out at a school. The requester, Kyle Walpole, received a blanket denial claiming the names were part of a personnel file and contained confidential medical information. When a lawyer pointed out that the school district was improperly blocking the request under the law, the district agreed to release the names.</p>
+		<p>Because Colorado doesn't have a centralized process for handling public records requests, “You have all sorts of different agencies and governments, and they all handle it in their own little way,” said Jeffrey Roberts, director of the Colorado Freedom of Information Coalition. Furthermore, “We don't have training for records custodians in Colorado,” he said. This means responses to public requests range from very good to very bad throughout the state. “What I have seen are public information officers shooting off a letter with a denial that's … not very detailed,” Roberts said about the lack of public information training in Colorado's state and local governments.</p>
+		<p>In 2013, two investigative reporters for Channel 7, the ABC affiliate in Denver, produced a series titled “Contrary to the public interest” that exposed the different ways open records requests in Colorado are handled. For example, there's a disparity “from county to county, court to court,” in deciding fees for filling open records requests for court records, among other problems.</p>
+		<p>“Most of the time an open records request just scares the bejesus out of departments and they will find a reason not to answer it,” said Pamela Cress, the grievance coordinator for Colorado  Workers for Innovative and New Solutions, a union that represents state employees."</p>
+		<p>Jeffrey Roberts, director of the Colorado Freedom of Information Coalition, during in a phone interview on Dec. 17, 2014.</p>
+		<p><a href="http://coloradofoic.org/files/2014/11/WalpoleLetterFromDistrict2014.09.23.pdf">Lynn Setzer, Chief Communications Officer, Jefferson County School District, response to an Open Records Request Sept. 22, 2014</a></p>
+		<p><a href="http://coloradofoic.org/files/2014/11/2014_10_28_CFOIC-Walpole-.pdf">Letter from attorney Katayoun Donnelly to lawyers for the Jefferson County School District, Oct. 28 2014</a></p>
+		<p><a href="http://www.thedenverchannel.com/news/call7-investigators/open-records/contrary-to-the-public-interest-questioning-the-police">“Contrary to the public interest,” ABC Channel 7, Denver, 2013</a></p>
+		<p><a href="#" id="sunshine10-hide" class="hideLink" onclick="showHide('sunshine10');return false;">Show less</a></p>
+		</div>
+		</div>
+	</div>
+
+	<div id="wrap">
+	  <div class="section">
+	    <div class="question">In practice, citizens can resolve appeals to access to information requests within a reasonable time period and at no cost.</div>
+	    <div class="score-box-no">
+	  		<div class="score-no">0</div>
+	  	</div>
+	  </div>
+	  <div class="accordion"><p class="score-all">100: 10% &bull; 75: 4% &bull; 50: 14% &bull; 25: 28% &bull; 0: 44%</p>
+	  <p>"There is not a formal appeal process in Colorado if a requestor is denied a public record. Instead, if one wants to fight a denial one has to go to court. That can be time consuming and expensive. And, when it comes to law enforcement, “the courts take a deferential attitude to decisions made by local [police] departments,” according to Denver media attorney Steve Zansberg. <a href="#" id="sunshine11-show" class="showLink" onclick="showHide('sunshine11');return false;">Show more</a></p>
+		<div id="sunshine11" class="more">
+		<p> If you do win in court, though, and “if a government agency improperly withholds and the person requesting the records prevails in court, the agency must pay the requestor’s attorney fees, according to state law,” according to ABC News7 in Denver.</p>
+		<p> But going to court is not an option for many people who don't have the money to hire an attorney or the time to wait for the court system to process the complaint, said Jeffrey Roberts, director of the Colorado Freedom of Information Coalition."</p>
+		<p>Jeffrey Roberts, director of the Colorado Freedom of Information Coalition, during a phone interview on Dec. 17, 2014.</p>
+		<p><a href="http://www.thedenverchannel.com/news/call7-investigators/open-records/contrary-to-the-public-interest-questioning-the-police">“Contrary to the public interest,” ABC News7 Denver, 2013</a></p>
+		<p><a href="http://www.cjr.org/united_states_project/colorado_police_body_cam_access_to_footage.php?page=all#sthash.abV4s8Oe.dpuf">“More cops are wearing body cams. When will the footage be a public record? In Colorado, the decision will be up to local police departments,” Sept. 23, 2014</a></p>
+		<p><a href="#" id="sunshine11-hide" class="hideLink" onclick="showHide('sunshine11');return false;">Show less</a></p>
+		</div>
+		</div>
+	</div>
+
+<div class="section">
+	    <div class="question">The entity that monitors application of access to information laws independently initiates investigations/imposes penalties on offenders.</div>
+	    <div class="score-box-no">
+	  		<div class="score-no">0</div>
+	  	</div>
+	  </div>
+	  <div class="accordion"><p class="score-all">100: 2% &bull; 75: 6% &bull; 50: 16% &bull; 25: 16% &bull; 0: 60%</p>
+	  <p>Colorado does not have an agency that monitors the application of access to information laws. Someone denied a request must seek a remedy in court. “If a government agency improperly withholds and the person requesting the records prevails in court, the agency must pay the requestor’s attorney fees, according to state law,” according to a 2013 investigative report by ABC 7News Denver. <a href="#" id="sunshine12-show" class="showLink" onclick="showHide('sunshine12');return false;">Show more</a></p>
+		<div id="sunshine12" class="more">
+		<p>Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015 phone interview.</p>
+		<p>Jeffrey Roberts, director of the Colorado Freedom of Information Coalition, during a phone interview on Dec. 17, 2014.</p>
+		<p><a href="http://www.thedenverchannel.com/news/call7-investigators/open-records/contrary-to-the-public-interest-questioning-the-police">“Contrary to the public interest,” ABC News7 Denver, 2013</a></p>
+		<p><a href="#" id="sunshine12-hide" class="hideLink" onclick="showHide('sunshine12');return false;">Show less</a></p>
+		</div>
+		</div>
+
+	  <div class="section">
+	    <div class="question">In practice, government responses to FOI requests are made available in open data format.</div>
+	    <div class="score-box-no">
+	  		<div class="score-no">0</div>
+	  	</div>
+	  </div>
+	  <div class="accordion"><p class="score-all">100: 2% &bull; 75: 0% &bull; 50: 2% &bull; 25: 10% &bull; 0: 86%</p>
+	  <p>State government in Colorado does not maintain a central or decentralized database that lists all government responses to public records requests. Some public entities, such as public universities, might choose to do it themselves, but they are isolated incidents, according to interviews. Colorado’s Secretary of State’s website states that agencies “may have different processes for open records requests.” That office, for example, states that information available in an electronic format can “generally be placed on a disk or emailed,” but if the information is not available electronically, “we will send paper copies to you by mail or fax.” <a href="#" id="sunshine13-show" class="showLink" onclick="showHide('sunshine13');return false;">Show more</a></p>
+		<div id="sunshine13" class="more">
+		<p>Jeffrey Roberts, director of the Colorado Freedom of Information Coalition, during a phone interview on Dec. 17, 2014.</p>
+		<p>Steve Zansberg, a Denver-based media attorney who represents Colorado newspapers and broadcasters, and is president of the Colorado Freedom of Information Coalition, during a Jan. 26, 2015, phone interview.</p>
+		<p><a href="http://www.sos.state.co.us/pubs/info_center/coraFAQ.html">Colorado Secretary of State website, Frequently Asked Questions, accessed on April 20, 2015</a></p>
+		<p><i><p>A <strong>100 score</strong> is earned if the government maintains a centralized or decentralized database that lists all government responses to FOI requests. Information can be easily accessed, downloaded in bulk and in a machine-readable format (non-PDF). A <strong>50 score</strong> is earned if some information cannot be easily accessed and/or downloaded in bulk, but it can be downloaded in machine-readable format. A <strong>0 score</strong> is earned if such information is not available online or it is but it cannot be downloaded.</p></i></p>
+		<p><a href="#" id="sunshine13-hide" class="hideLink" onclick="showHide('sunshine13');return false;">Show less</a></p>
+		</div>
+		</div>
+		</div>
+		</div>
+
+		<!-- <h1>Overall transparency and accountability score</h1>
+		<table>
+			<tr>
+				<th>State</th>
+				<th>Score</th>
+				<th>Grade</th>
+				<th>Rank</th>
+			</tr>
+			<tr class="grade-c">
+				<td>Alaska</td>
+				<td>76.2</td>
+				<td>C</td>
+				<td>1</td>
+			</tr>
+			<tr class="grade-c">
+				<td>California</td>
+				<td>73.5</td>
+				<td>C</td>
+				<td>2</td>
+			</tr>
+			<tr class="grade-c-minus">
+				<td>Connecticut</td>
+				<td>70.8</td>
+				<td>C-</td>
+				<td>3</td>
+			</tr>
+			<tr class="grade-d-plus">
+				<td>Hawaii</td>
+				<td>68.8</td>
+				<td>D+</td>
+				<td>4</td>
+			</tr>
+			<tr class="grade-d-plus">
+				<td>Rhode Island</td>
+				<td>68.4</td>
+				<td>D+</td>
+				<td>5</td>
+			</tr>
+			<tr class="grade-d-plus">
+				<td>Ohio</td>
+				<td>67.8</td>
+				<td>D+</td>
+				<td>6</td>
+			</tr>
+			<tr class="grade-d-plus">
+				<td>Alabama</td>
+				<td>67.4</td>
+				<td>D+</td>
+				<td>7</td>
+			</tr>
+			<tr class="grade-d-plus">
+				<td>Nebraska</td>
+				<td>67.2</td>
+				<td>D+</td>
+				<td>8</td>
+			</tr>
+			<tr class="grade-d-plus">
+			<td>Iowa</td>
+				<td>67.1</td>
+				<td>D+</td>
+				<td>9</td>
+			</tr>
+			<tr class="grade-d-plus">
+				<td>Kentucky</td>
+				<td>67.1</td>
+				<td>D+</td>
+				<td>9</td>
+			</tr>
+			<tr class="grade-d-plus">
+				<td>Massachusetts</td>
+				<td>67.1</td>
+				<td>D+</td>
+				<td>9</td>
+			</tr>
+			<tr class="grade-d-plus">
+				<td>Washington</td>
+				<td>67.0</td>
+				<td>D+</td>
+				<td>12</td>
+			</tr>
+			<tr class="grade-d-plus">
+				<td>Illinois</td>
+				<td>66.8</td>
+				<td>D+</td>
+				<td>13</td>
+			</tr>
+			<tr class="grade-d" style="font-weight: bold">
+				<td>Colorado</td>
+				<td>66.3</td>
+				<td>D</td>
+				<td>14</td>
+			</tr>
+			<tr class="grade-d">
+				<td>Tennessee</td>
+				<td>66.2</td>
+				<td>D</td>
+				<td>15</td>
+			</tr>
+			<tr class="grade-d">
+				<td>Virginia</td>
+				<td>65.9</td>
+				<td>D</td>
+				<td>16</td>
+			</tr>
+			<tr class="grade-d">
+				<td>West Virginia</td>
+				<td>65.8</td>
+				<td>D</td>
+				<td>17</td>
+			</tr>
+			<tr class="grade-d">
+				<td>North Carolina</td>
+				<td>64.8</td>
+				<td>D</td>
+				<td>18</td>
+			</tr>
+			<tr class="grade-d">
+				<td>New Jersey</td>
+				<td>64.6</td>
+				<td>D</td>
+				<td>19</td>
+			</tr>
+			<tr class="grade-d">
+				<td>Wisconsin</td>
+				<td>64.1</td>
+				<td>D</td>
+				<td>20</td>
+			</tr>
+			<tr class="grade-d">
+				<td>Montana</td>
+				<td>63.9</td>
+				<td>D</td>
+				<td>21</td>
+			</tr>
+			<tr class="grade-d">
+				<td>Arizona</td>
+				<td>63.6</td>
+				<td>D</td>
+				<td>22</td>
+			</tr>
+			<tr class="grade-d">
+				<td>Maryland</td>
+				<td>63.5</td>
+				<td>D</td>
+				<td>23</td>
+			</tr>
+			<tr class="grade-d-minus">
+				<td>Georgia</td>
+				<td>62.8</td>
+				<td>D-</td>
+				<td>24</td>
+			</tr>
+			<tr class="grade-d-minus">
+				<td>Utah</td>
+				<td>62.2</td>
+				<td>D-</td>
+				<td>25</td>
+			</tr>
+			<tr class="grade-d-minus">
+				<td>Idaho</td>
+				<td>62.1</td>
+				<td>D-</td>
+				<td>26</td>
+			</tr>
+			<tr class="grade-d-minus">
+				<td>Missouri</td>
+				<td>62.1</td>
+				<td>D-</td>
+				<td>26</td>
+			</tr>
+			<tr class="grade-d-minus">
+				<td>Minnesota</td>
+				<td>61.8</td>
+				<td>D-</td>
+				<td>28</td>
+			</tr>
+			<tr class="grade-d-minus">
+				<td>Indiana</td>
+				<td>61.5</td>
+				<td>D-</td>
+				<td>29</td>
+			</tr>
+			<tr class="grade-d-minus">
+				<td>New York</td>
+				<td>61.3</td>
+				<td>D-</td>
+				<td>30</td>
+			</tr>
+			<tr class="grade-d-minus">
+				<td>Florida</td>
+				<td>61.3</td>
+				<td>D-</td>
+				<td>30</td>
+			</tr>
+			<tr class="grade-d-minus">
+				<td>Arkansas</td>
+				<td>61.2</td>
+				<td>D-</td>
+				<td>32</td>
+			</tr>
+			<tr class="grade-d-minus">
+				<td>Mississippi</td>
+				<td>60.8</td>
+				<td>D-</td>
+				<td>33</td>
+			</tr>
+			<tr class="grade-d-minus">
+				<td>New Hampshire</td>
+				<td>60.7</td>
+				<td>D-</td>
+				<td>34</td>
+			</tr>
+			<tr class="grade-d-minus">
+				<td>New Mexico</td>
+				<td>60.6</td>
+				<td>D-</td>
+				<td>35</td>
+			</tr>
+			<tr class="grade-d-minus">
+				<td>South Carolina</td>
+				<td>60.5</td>
+				<td>D-</td>
+				<td>36</td>
+			</tr>
+			<tr class="grade-d-minus">
+				<td>North Dakota</td>
+				<td>60.1</td>
+				<td>D-</td>
+				<td>37</td>
+			</tr>
+			<tr class="grade-d-minus">
+				<td>Texas</td>
+				<td>60.0</td>
+				<td>D-</td>
+				<td>38</td>
+			</tr>
+			<tr class="grade-d-minus">
+				<td>Vermont</td>
+				<td>59.7</td>
+				<td>D-</td>
+				<td>39</td>
+			</tr>
+			<tr class="grade-f">
+				<td>Oklahoma</td>
+				<td>59.2</td>
+				<td>F</td>
+				<td>40</td>
+				</tr>
+			<tr class="grade-f">
+				<td>Louisiana</td>
+				<td>58.8</td>
+				<td>F</td>
+				<td>41</td>
+				</tr>
+			<tr class="grade-f">
+				<td>Kansas</td>
+				<td>58.7</td>
+				<td>F</td>
+				<td>42</td>
+				</tr>
+			<tr class="grade-f">
+				<td>Maine</td>
+				<td>58.6</td>
+				<td>F</td>
+				<td>43</td>
+				</tr>
+			<tr class="grade-f">
+				<td>Oregon</td>
+				<td>58.1</td>
+				<td>F</td>
+				<td>44</td>
+				</tr>
+			<tr class="grade-f">
+				<td>Pennsylvania</td>
+				<td>57.9</td>
+				<td>F</td>
+				<td>45</td>
+				</tr>
+			<tr class="grade-f">
+				<td>Nevada</td>
+				<td>57.0</td>
+				<td>F</td>
+				<td>46</td>
+				</tr>
+			<tr class="grade-f">
+				<td>South Dakota</td>
+				<td>56.1</td>
+				<td>F</td>
+				<td>47</td>
+				</tr>
+			<tr class="grade-f">
+				<td>Delaware</td>
+				<td>55.5</td>
+				<td>F</td>
+				<td>48</td>
+				</tr>
+			<tr class="grade-f">
+				<td>Wyoming</td>
+				<td>50.9</td>
+				<td>F</td>
+				<td>49</td>
+				</tr>
+			<tr class="grade-f">
+				<td>Michigan</td>
+				<td>50.4</td>
+				<td>F</td>
+				<td>50</td>
+			</tr>
+		</table> -->
+
+    <script>
+
+      function create_row (item) {
+      var row = $('<tr><td style="font-weight: bold">' + item['state'] + '</td><td class="' + item['overallGrade'] + '">' + item['overall'] + '</td><td class="' + item['publicInfoGrade'] + '">' + item['publicInfo'] + '</td><td class="' + item['politicalFinancingGrade'] + '">'+ item['politicalFinancing'] + '</td><td class="' + item['electoralOversightGrade'] + '">' + item['electoralOversight'] + '</td><td class="' + item['executiveAccountabilityGrade'] + '">' + item['executiveAccountability'] + '</td><td class="' + item['legislativeAccountabilityGrade'] + '">' + item['legislativeAccountability'] +  '</td><td class="' + item['judicialAccountabilityGrade'] + '">' + item['judicialAccountability'] + '</td><td class="' + item['budgetProcessGrade'] + '">' + item['budgetProcess']  + '</td><td class="' + item['civilServiceGrade'] + '">' + item['civilService'] + '</td><td class="' + item['procurementGrade'] + '">' + item['procurement'] + '</td><td class="' + item['internalAuditingGrade'] + '">' + item['internalAuditing'] + '</td><td class="' + item['lobbyingDisclosureGrade'] + '">' + item['lobbyingDisclosure'] + '</td><td class="' + item['ethicsEnforcementGrade'] + '">' + item['ethicsEnforcement'] + '</td><td class="' + item['pensionFundGrade'] + '">' + item['pensionFund'] + '</td></tr>');
+        return row;
+      }
+
+      $.ajax({
+        url : 'sunshine-data.js',
+        dataType : 'json',
+        success : function(data) {
+		    $.each(data, function(index, item){
+			  var row = create_row(item);
+			  $('table tbody').append(row);
+			});
+			$('table').trigger('footable_initialize');
+	  	}
+	  });
+
+		$(function () {
+  		  $('table').footable({ bookmarkable: { enabled: true }}).bind({
+  		    'footable_filtering': function (e) {
+  		      var selected = $('#sport,#graduation-year').find(':selected').text();
+  		      var items = selected.split(' ')
+  		      if (selected && selected.length > 0) {
+  		        e.filter += (e.filter && e.filter.length > 0) ? ' ' + selected : selected;
+  		        e.clear = !e.filter;
+  		      }
+  		    },
+  		    'footable_filtered': function() {
+  		      var count = $('table.footable tbody tr:not(.footable-filtered)').length;
+  		      $('.row-count').html(count + ' rows found');
+  		    }
+  		  });
+    		$('.clear-filter').click(function (e) {
+    		  e.preventDefault();
+    		  $('.filter-type').val('');
+    		  $('.filter-category').val('');
+    		  $('.filter-date').val('');
+    		  $('table.preps').trigger('footable_clear_filter');
+    		  $('.row-count').html('');
+    		});
+  		  $('.filter-type').change(function (e) {
+  		    e.preventDefault();
+  		    $('table.preps').data('footable-filter').filter( $('#filter').val() );
+  		  });
+    		$('.filter-category').change(function (e) {
+    		  e.preventDefault();
+    		  $('table.preps').data('footable-filter').filter( $('#filter').val() );
+    		});
+    		$('.filter-date').change(function (e) {
+    		  e.preventDefault();
+    		  $('table.preps').data('footable-filter').filter( $('#filter').val() );
+    		});
+      });
+      </script>
+
+    <script src="http://extras.denverpost.com/foundation/js/foundation.min.js"></script>
+  </body>
+</html>
