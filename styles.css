@@ -1,7 +1,7 @@
-	body {
+/* 	body {
 		width: 654px;
 		margin-left: 30%;
-	}
+	} */
 
 /* #wrap {
 		font: 1.3em/1.3 Arial, Helvetica, sans-serif;
@@ -25,15 +25,15 @@
 	a.showLink:hover, a.hideLink:hover {
 		border-bottom: 1px dotted #36f; }
 
-	.section {
+	/* .section {
 		display: table;
 		margin: 22px 0px 0px 0px;
-	}
+	} */
 	.score-box-yes {
 		width: 30%;
 		height: 94px;
 		float: left;
-		background-color: rgba(0,175,0,0.4);
+		background-color: rgba(0,175,0,0.5);
 	}
 	.score-yes {
 		font-family: "Oswald" Arial sans-serif;
@@ -59,7 +59,7 @@
 		width: 30%;
 		height: 94px;
 		float: left;
-		background-color: rgba(212,160,23,0.7);
+		background-color: rgba(212,160,23,0.5);
 	}
 	.score-moderate {
 		font-family: "Oswald" Arial sans-serif;
@@ -96,6 +96,7 @@
 		padding: 10px;
 		font-size: 17px;
 		border-top: solid 2px rgba(0,0,0,0.2);
+		margin-bottom: 18px;
 	}
 	table {
 		margin-top: 15px;
@@ -131,7 +132,7 @@
 		background-color: rgba(0,175,0,0.3);
 	}
 	td.grade-c {
-		background-color: rgba(245,245,0,0.1);
+		background-color: rgba(212,160,23,0.1);
 	}
 	td.grade-d {
 		background-color: rgba(176,0,0,0.3);
